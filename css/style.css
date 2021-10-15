@@ -1,0 +1,126 @@
+@font-face {
+    font-family: timer;
+    src: url(../fonts/timer.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black !important;
+}
+.container{
+    padding-top: 1.5rem;
+}
+.container .heading h1{
+    font-size: 70px;
+    color: aqua;
+    text-align: center;
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: timer;
+    padding: 5px 10px;
+}
+.colin{
+    font-size: 7rem;
+    color: lawngreen;
+}
+.container .time span{
+    font-size: 7.5rem;
+    color: lawngreen;
+}
+.container .content .time b{
+    display: block;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.btnrow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-bottom: 1.6rem;
+}
+
+.btn{
+    border: 0;
+    border-radius: 10px;
+    width: 8rem;
+    padding:5px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+
+#start{
+    background-color: rgb(4, 161, 4);
+}
+#stop{
+    background-color: dodgerblue;
+}
+#restart{
+    background-color: rgb(240, 22, 22);
+}
+
+
+@media(max-width:770px){
+    .container .content .time span{
+        font-size: 80px;
+    }
+    .colin{
+        font-size: 7rem;
+    }
+}
+@media(max-width:500px){
+    .container .content .time span{
+        font-size: 8rem;
+    }
+   
+    .container .content .time{
+        width: 46%;
+    }
+    .colin{
+        display: none;
+    }
+    .btnrow{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .btn{
+    margin-top: 10px;
+
+    }
+}
+@media(max-width : 300px){
+    .container .content .time span{
+        font-size: 6.6rem;
+    }
+   
+}
+@media(min-width:1000px){
+    .container .content .time span{
+        font-size: 11rem;
+    }
+    .container .content{
+        padding: 5px 22px;
+    }
+    .colin{
+        font-size: 10rem;
+    }
+    .btnrow{
+        margin-top: 3.5rem;
+    }
+  
+}

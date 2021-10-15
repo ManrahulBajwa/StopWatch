@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- My External CSS -->    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading Row -->
+        <div class="row">
+            <div class="heading">
+                <h1>Stop Watch</h1>
+            </div>
+        </div>
+
+
+            <!-- content Row -->
+       <div class="content">
+           <div class="time">
+            <span id="hour">00</span>
+            <b>hour</b>
+            </div>
+
+            <span class="colin">:</span>
+
+           <div class="time">
+            <span id="min">00</span>
+            <b>min</b>
+
+           </div>
+
+           <span class="colin">:</span>
+
+           <div class="time">
+            <span id="sec">00</span>
+            <b>Sec</b>
+           </div>
+
+           <span class="colin">:</span>
+
+           <div class="time">
+            <span id="msec">00</span>
+            <b>M Sec</b>
+           </div>
+       </div>
+    </div>
+
+    <div class="btnrow">
+        <button onclick="start()" id="start" class="btn">Start</button>
+        <button onclick="st()" id="stop" class="btn">Stop</button>
+        <button onclick="reset()" id="restart" class="btn">Reset</button>
+    </div>
+
+
+
+    <script src="js/javascript.js"></script>
+    <!-- Bootstrap javascript -->
+</body>
+</html>
