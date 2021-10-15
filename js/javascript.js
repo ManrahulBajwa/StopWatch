@@ -17,6 +17,10 @@ function reset() {
     document.getElementById('min').innerHTML = "00";
     document.getElementById('sec').innerHTML = "00";
     document.getElementById('msec').innerHTML = "00";
+    hour = 0;
+    min = 0;
+    sec = 0;
+    msec = 0;
 }
 
 function stopwatch() {
@@ -45,19 +49,19 @@ function stopwatch() {
         let minStr = min;
         let hourStr = hour;
 
-        if(msec < 10){
+        if (msec < 10) {
             msecStr = "0" + msec
         }
-        if(sec < 10){
+        if (sec < 10) {
             secStr = "0" + sec
         }
-        if(min < 10){
+        if (min < 10) {
             minStr = "0" + min
         }
-        if(hour < 10){
+        if (hour < 10) {
             hourStr = "0" + hour
         }
-        
+
 
         document.getElementById('hour').innerHTML = hourStr;
         document.getElementById('min').innerHTML = minStr;
