@@ -5,8 +5,10 @@ let msec = 0;
 let timer = false;
 
 function start() {
+   if(timer == false){
     timer = true;
     stopwatch();
+   }
 }
 function st() {
     timer = false;
