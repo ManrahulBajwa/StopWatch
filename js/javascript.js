@@ -11,7 +11,7 @@ function start() {
 function st() {
     timer = false;
 }
-function restart() {
+function reset() {
     timer = false;
     document.getElementById('hour').innerHTML = "00";
     document.getElementById('min').innerHTML = "00";
